@@ -1,4 +1,5 @@
-﻿// Напишите программу, которая на вход принимает два числа и выдаёт, 
+﻿//SEMINAR1
+// Напишите программу, которая на вход принимает два числа и выдаёт, 
 // какое число большее, а какое меньшее.
 // a = 5; b = 7 -> max = 7
 // a = 2 b = 10 -> max = 10
@@ -58,3 +59,83 @@
 // {
 //     Console.Write(i + " ");
 // }
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//SEMINAR2
+// Напишите программу, которая принимает на вход трёхзначное число 
+// и на выходе показывает вторую цифру этого числа.
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+// Console.WriteLine("Введите трехзначное число ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+// if(numberA<=99) Console.WriteLine(numberA + " => не трехзначное число");
+// else if(numberA>=1000) Console.WriteLine(numberA + " => не трехзначное число");
+// else Console.WriteLine(numberA/10%10);
+//---------решение через методы-----------
+// void Number2(){
+// int numberA = Convert.ToInt32(Console.ReadLine());
+// if(numberA<=99) Console.WriteLine(numberA + " => не трехзначное число");
+// else if(numberA>=1000) Console.WriteLine(numberA + " => не трехзначное число");
+// else Console.WriteLine(numberA/10%10);
+// }
+// Console.WriteLine("Введите трехзначное число ");
+// Number2();
+
+// Напишите программу, которая выводит третью цифру 
+//заданного числа или сообщает, что третьей цифры нет.
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
+// Console.WriteLine("Введите число: ");
+// long numberA = Convert.ToInt64(Console.ReadLine());
+// if (numberA <= 99) Console.WriteLine("В числе " + numberA + " третьей цифры нет!");
+// else
+// {
+//     Console.Write("Третья цифра числа " + numberA + " => ");
+//     for (long i = 0; numberA >= 1000; i++)
+//     {
+//         numberA = numberA / 10;
+//     }
+//     Console.WriteLine(numberA % 10);
+// }
+//---------решение через методы-----------
+// void Number3()
+// {
+//     long numberA = Convert.ToInt64(Console.ReadLine());
+//     if (numberA <= 99) Console.WriteLine("В числе " + numberA + " третьей цифры нет!");
+//     else
+//     {
+//         Console.Write("Третья цифра числа " + numberA + " => ");
+//         for (long i = 0; numberA >= 1000; i++)
+//         {
+//             numberA = numberA / 10;
+//         }
+//         Console.WriteLine(numberA % 10);
+//     }
+// }
+// Console.WriteLine("Введите число: ");
+// Number3();
+
+// Напишите программу, которая принимает на вход цифру, 
+// обозначающую день недели, и проверяет, является ли этот день выходным.
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+// Console.WriteLine("Введите цифру дня недели: ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+// if(numberA<=0||numberA>=8) Console.WriteLine(numberA + " это не день недели!");
+// else if(numberA==6||numberA==7) Console.WriteLine("Ура, выходной!!!");
+// else Console.WriteLine(numberA + " => рабочий день недели.");
+//---------решение через методы-----------
+// void Dey()
+// {
+//     int numberA = Convert.ToInt32(Console.ReadLine());
+//     if (numberA <= 0 || numberA >= 8) Console.WriteLine(numberA + " это не день недели!");
+//     else if (numberA == 6 || numberA == 7) Console.WriteLine("Ура, выходной!!!");
+//     else Console.WriteLine(numberA + " => рабочий день недели.");
+// }
+// Console.WriteLine("Введите цифру дня недели: ");
+// Dey();
