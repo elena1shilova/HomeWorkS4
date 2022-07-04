@@ -139,3 +139,161 @@
 // }
 // Console.WriteLine("Введите цифру дня недели: ");
 // Dey();
+
+
+// int[] Input()
+//             {
+//                 int[] Array = new int[2];
+//                 Console.WriteLine("Введите координату Х");
+//                 int x = Convert.ToInt32(Console.ReadLine());
+//                 Array[0] = x;
+//                 Console.WriteLine("Введите координату У");
+//                 int y = Convert.ToInt32(Console.ReadLine());
+//                 Array[1] = y;
+//                 return Array;
+//             }
+//             int[] mini = Input();
+//             while (mini[0] == 0 || mini[1] == 0)
+//             {
+//                 Console.WriteLine("Точка находится на оси");
+//                 mini = Input();
+//             }
+
+//             if (mini[0] > 0 && mini[1] > 0)
+//             {
+//                 Console.WriteLine("Точка находится в первой четверти");
+//             }
+
+//             else if (mini[0] < 0 && mini[1] < 0)
+//             {
+//                 Console.WriteLine("Точка находится в третьей четверти");
+//             }
+
+//             else if (mini[1] < 0 && mini[0] > 0)
+//             {
+//                 Console.WriteLine("Точка находится в четвертой четверти");
+//             }
+
+//             else
+//             {
+//                 Console.WriteLine("Точка находится во второй четверти");
+//             }
+
+// Console.WriteLine("Введите четверть: ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+//--------
+// if(numberA == 1) {
+//     Console.WriteLine("x>0 " + "y>0");
+// }
+// else if(numberA == 2) {
+//     Console.WriteLine("x<0 " + "y>0");
+// }
+// else if(numberA == 3) {
+//     Console.WriteLine("x<0 " + "y<0");
+// }
+//     else if(numberA == 4){
+//     Console.WriteLine("x>0 " + "y<0");
+// }
+// else Console.WriteLine("Данной четверти не существует!");
+//-------
+//Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+// A (3,6); B (2,1) -> 5,09 
+// A (7,-5); B (1,-1) -> 7,21
+// Console.WriteLine("Впишите координаты точки 1: ");
+// double AX = Convert.ToInt32(Console.ReadLine());
+// double AY = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Впишите координаты точки 2: ");
+// double BX = Convert.ToInt32(Console.ReadLine());
+// double BY = Convert.ToInt32(Console.ReadLine());
+// double CX = (BX-AX)*(BX-AX);
+// double CY = (BY-AY)*(BY-AY);
+// double result = Math.Sqrt(CX+CY);
+// Console.WriteLine(result);
+///---------
+// Console.Write("Введите число: ");
+// double number = Convert.ToInt32(Console.ReadLine());
+// Console.Write(number+"=>");
+// for (int i = 1; i <= number; i++)
+// {
+//     double math.pow(i , 2);
+//     Console.Write(sum+" ");
+// }
+
+//SEMINAR3
+// Напишите программу, которая принимает на вход пятизначное число и 
+// проверяет, является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+// int[] newArray(int length)//объявляем массив
+// {
+//     int[] array = new int[length];//создаем новый массив array с типом int и длинной, заданной за пределами метода
+//     return array;//возвращаем новый массив
+// }
+// int[] fillArray(int[] array)//заполняем массив, создаем метод, который вернет нам массив
+// {
+//     Console.WriteLine("Введите число: ");
+//     int numberA = Convert.ToInt32(Console.ReadLine());// просим пользователя в консоли ввести значение
+//     for (int i = 0; i < array.Length; i++)//пока i < длины массива
+//     {
+//         array[i] = numberA % 10; //записываем остаток от деления на 10 в текущий индекс массива
+//         numberA = numberA / 10;//перебираем число по цифрам путем деления на 10
+//                                //    Console.Write($"{array[i]} ");
+//     }
+//     return array;//возвращаем заполненный массив
+// }
+// int palindArray(int[] array)//создаем метод, в который отправим массив и заберем результат после сравнения
+// {
+//     int len = array.Length;
+//     int test = 0;
+//     if (array[0] == array[4] && array[1] == array[3]) test = 1;
+//     else test = 2;
+//     return test;
+// }
+// int[] array = newArray(5);//передаем, что в массиве будет пять значений
+// fillArray(array);//запускаем 2 метод, в данном случае заданное число разбиваем на значения массива
+// int palindrom = palindArray(array);
+// if (palindrom == 1) Console.WriteLine("Палиндром!");
+// else Console.WriteLine("Не является палиндромом!");
+//---------------
+// Напишите программу, которая принимает на вход координаты двух точек и 
+// находит расстояние между ними в 3D пространстве.
+// A (3,6,8); B (2,1,-7), -> 15.84
+// A (7,-5, 0); B (1,-1,9) -> 11.53
+//A(xa, ya, za) и B(xb, yb, zb)
+//AB = √(xb - xa)2 + (yb - ya)2 + (zb - za)2
+// double distance(int Ax, int Ay, int Az, int Bx, int By, int Bz)
+// {
+//     double res = 0;
+//     res = Math.Round(Math.Sqrt((Bx-Ax)*(Bx-Ax)+(By-Ay)*(By-Ay)+(Bz-Az)*(Bz-Az)),2);
+//     return res;
+// }
+// Console.WriteLine("Введите координаты первой точки (1): ");
+// int Ax = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты первой точки (2): ");
+// int Ay = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты первой точки (3): ");
+// int Az = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты второй точки (1): ");
+// int Bx = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты второй точки (2): ");
+// int By = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты второй точки (3): ");
+// int Bz = Convert.ToInt32(Console.ReadLine());
+// double dist = distance(Ax, Ay, Az, Bx, By, Bz);
+// Console.WriteLine(dist);
+//--------------
+// Напишите программу, которая принимает на вход число (N) и 
+// выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+// void tableCube(int num)
+// {
+//     for (int i = 1; i <= num; i++)
+//     {
+//         Console.Write(i*i*i+" ");
+//     }
+// }
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// tableCube(num);
