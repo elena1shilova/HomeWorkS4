@@ -297,3 +297,132 @@
 // Console.WriteLine("Введите число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
 // tableCube(num);
+//-----------
+// void sum_numbers(int num)
+// {
+//     int sum = 0;
+//     for (int i = 1; i <= num; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     Console.WriteLine(num + "->" + sum);
+// }
+
+
+// for (int i = 0; i < 5; i++)
+// {
+// Console.WriteLine("Ввод числа N");
+// int N = Convert.ToInt32(Console.ReadLine());
+// sum_numbers(N);
+
+// }
+
+//----
+// int[] CreateRandomArray(int N, int start, int end)
+// {
+//     int[] RandomArray = new int[N];
+//     for (int i = 0; i < N; i++)
+//     {
+//         RandomArray[i] = new Random().Next(start, end + 1);
+//     }
+//     return RandomArray;
+// }
+// int[] CreateArray()
+// {
+//     Console.WriteLine("Введите количество элементов массива");
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     int[] RandomArray = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {   
+//         Console.WriteLine($"Введите {i+1} элемент массива");
+//         RandomArray[i] = Convert.ToInt32(Console.ReadLine());
+//     }
+//     return RandomArray;
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+// Console.Clear();
+// Console.WriteLine("Введите количество элементов в массиве");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите первое число случайно генерируемого диапазона");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите последнее число случайно генерируемого диапазона");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[] myRandomArray = CreateRandomArray(num, min, max);
+// ShowArray(myRandomArray);
+// Console.WriteLine("-------");
+// int[] myArray = CreateArray();
+// ShowArray(myArray);
+
+//SEMINAR4
+// Напишите цикл, который принимает на вход два числа (A и B) 
+// и возводит число A в натуральную степень B.
+// 3, 5 -> 243 (3⁵)
+// 2, 4 -> 16
+// double naturalDegree(int numA, int numB)
+// {
+//     return Math.Pow(numA, numB);
+// }
+// Console.Write("Введите первое число: ");
+// int A = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int B = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{A}^{B} -> " + naturalDegree(A,B));
+//-----
+// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
+// int sumMethod(int numA)
+// {
+//     int sum = 0;
+//     while (numA > 0)
+//     {
+//         sum = sum + numA % 10;
+//         numA = numA / 10;
+//     }
+//     return sum;
+// }
+// Console.Write("Введите число: ");
+// int A = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Сумма цифр в числе {A} -> {sumMethod(A)}");
+//----------
+// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+// int[] newArray(int length, int min, int max)
+// {
+//     int[] array = new int[length];
+    
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i]=new Random().Next(min,max+1);
+//     }
+//     return array;
+// }
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// Console.Clear();
+// Console.Write("Введите минимальное число для диапазона: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите максимальное число для диапазона: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// // newArray(8,min,max);
+// Console.Write($"Массив с диапозоном от {min} до {max} -> ");
+// int[] myArray = newArray(8,min,max);
+// ShowArray(myArray);
