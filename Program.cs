@@ -426,3 +426,178 @@
 // Console.Write($"Массив с диапозоном от {min} до {max} -> ");
 // int[] myArray = newArray(8,min,max);
 // ShowArray(myArray);
+// Примеры форматирования
+
+// string name = "Имя";
+// int age = 99;
+// Console.WriteLine("Имя: {0}  Возраст: {1}", name, age);
+
+// int number = 23;
+// string result = string.Format("{0:f}", number);
+
+// Console.WriteLine(result);
+
+// double number2 = 45.08;
+// nt x = 7;
+// int y = 8;
+// string result = $"{x} + {y} = {x + y}";
+// Console.WriteLine(result);
+
+// string name = "Елена";
+// int age = 99;
+
+// Console.WriteLine($"Имя: {name, -10} Возраст: {age}"); // пробелы после
+// Console.WriteLin
+
+
+// Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. 
+// Найдите сумму отрицательных и положительных элементов массива.
+// Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] 
+// сумма положительных чисел равна 29, сумма отрицательных равна -20.
+
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void ShowArray(int[] array)
+// {
+
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// int[] myArray = CreateRandomArray(12, -9, 9);
+// ShowArray(myArray);
+// int sum_pos = 0;
+// int sum_neg = 0;
+
+// for (int i = 0; i < myArray.Length; i++)
+// {
+//     if (myArray[i] > 0)
+//         sum_pos += myArray[i];
+//     else
+//         sum_neg += myArray[i];
+// }
+
+// Console.WriteLine($"Сумма положительных: {sum_pos}. Сумма отрицательных: {sum_neg}");
+
+//SEMINAR5
+//Задайте массив заполненный случайными положительными трёхзначными числами. 
+//Напишите программу, которая покажет количество чётных чисел в массиве.
+//[345, 897, 568, 234] -> 2
+// int[] newArray(int length)
+// {
+//     int[] arr = new int[length];
+//     for (int i = 0; i < length; i++)
+//     {
+//          arr[i] = new Random().Next(100,1000);
+//     }
+// return arr;   
+
+// }
+// void number(int[] arr)
+// {
+//     int count = 0;
+//     Console.Write("В массиве среди случайных трехзначных чисел: ");
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         Console.Write($"{arr[i]} ");
+//         if(arr[i]%2==0) count++;
+//     }
+//     Console.Write($" - четных -> {count} ");
+// }
+// int[] array = newArray(4);
+// number(array);
+//------
+// Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
+// int[] newArray(int length, int start, int end)
+// {
+//     int[] array = new int[length];
+//     for (int i = 0; i < length; i++)
+//     {
+//         array[i] = new Random().Next(start, end + 1);
+//     }
+//     return array;
+// }
+// void sumNumber(int[] array)
+// {
+//     Console.Write("Сумма чисел на нечетных позициях массива чисел: ");
+//     int sum = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"{array[i]} ");
+//         if(i%2!=0) sum += array[i];
+//     }
+//     Console.Write($"= {sum}");
+// }
+// Console.Write("Введите первое число: ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// int[] arr = newArray(4, number1, number2);
+// sumNumber(arr);
+// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// [3 7 22 2 78] -> 76
+// double[] newArray(int length, int number1, int number2)
+// {
+//     double[] array = new double[length];
+//     for (int i = 0; i < length; i++)
+//     {
+//         array[i] = Math.Round(new Random().Next(number1,number2) + new Random().NextDouble(), 2);
+//         // Console.Write($"{array[i]} ");
+//     }
+//     return array;
+// }
+// void ShowArray(double[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + "; ");
+//     }
+//     Console.WriteLine();
+// }
+// double minNumber(double[] array)
+// {
+//     double min = array[0];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i]<min) min = array[i];
+//     }
+//     return min;
+// }
+// double maxNumber(double[] array)
+// {
+//     double max = array[0];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i]>max) max = array[i];
+//     }
+//     return max;
+// }
+// void result(double min, double max)
+// {
+//     Console.Write(Math.Round(min - max, 2));
+// }
+// Console.Write("Введите первое число: ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+// double[] arr =  newArray(4, number1, number2);
+// Console.Write($"В диапазоне чисел от {number1} до {number2} получаем массив: " );
+// ShowArray(arr);
+// double min = minNumber(arr);
+// double max = maxNumber(arr);
+// Console.Write($"Разница между максимальным {max} и минимальным {min} значениями = ");
+// result(max, min);
