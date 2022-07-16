@@ -200,22 +200,22 @@
 // A (3,6); B (2,1) -> 5,09 
 // A (7,-5); B (1,-1) -> 7,21
 // Console.WriteLine("Впишите координаты точки 1: ");
-// double AX = Convert.ToInt32(Console.ReadLine());
-// double AY = Convert.ToInt32(Console.ReadLine());
+// int AX = Convert.ToInt32(Console.ReadLine());
+// int AY = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Впишите координаты точки 2: ");
-// double BX = Convert.ToInt32(Console.ReadLine());
-// double BY = Convert.ToInt32(Console.ReadLine());
-// double CX = (BX-AX)*(BX-AX);
-// double CY = (BY-AY)*(BY-AY);
-// double result = Math.Sqrt(CX+CY);
+// int BX = Convert.ToInt32(Console.ReadLine());
+// int BY = Convert.ToInt32(Console.ReadLine());
+// int CX = (BX-AX)*(BX-AX);
+// int CY = (BY-AY)*(BY-AY);
+// int result = Math.Sqrt(CX+CY);
 // Console.WriteLine(result);
 ///---------
 // Console.Write("Введите число: ");
-// double number = Convert.ToInt32(Console.ReadLine());
+// int number = Convert.ToInt32(Console.ReadLine());
 // Console.Write(number+"=>");
 // for (int i = 1; i <= number; i++)
 // {
-//     double math.pow(i , 2);
+//     int math.pow(i , 2);
 //     Console.Write(sum+" ");
 // }
 
@@ -262,9 +262,9 @@
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 //A(xa, ya, za) и B(xb, yb, zb)
 //AB = √(xb - xa)2 + (yb - ya)2 + (zb - za)2
-// double distance(int Ax, int Ay, int Az, int Bx, int By, int Bz)
+// int distance(int Ax, int Ay, int Az, int Bx, int By, int Bz)
 // {
-//     double res = 0;
+//     int res = 0;
 //     res = Math.Round(Math.Sqrt((Bx-Ax)*(Bx-Ax)+(By-Ay)*(By-Ay)+(Bz-Az)*(Bz-Az)),2);
 //     return res;
 // }
@@ -280,7 +280,7 @@
 // int By = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Введите координаты второй точки (3): ");
 // int Bz = Convert.ToInt32(Console.ReadLine());
-// double dist = distance(Ax, Ay, Az, Bx, By, Bz);
+// int dist = distance(Ax, Ay, Az, Bx, By, Bz);
 // Console.WriteLine(dist);
 //--------------
 // Напишите программу, которая принимает на вход число (N) и 
@@ -367,7 +367,7 @@
 // и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
-// double naturalDegree(int numA, int numB)
+// int naturalDegree(int numA, int numB)
 // {
 //     return Math.Pow(numA, numB);
 // }
@@ -401,7 +401,7 @@
 // int[] newArray(int length, int min, int max)
 // {
 //     int[] array = new int[length];
-    
+
 //     for (int i = 0; i < array.Length; i++)
 //     {
 //         array[i]=new Random().Next(min,max+1);
@@ -437,7 +437,7 @@
 
 // Console.WriteLine(result);
 
-// double number2 = 45.08;
+// int number2 = 45.08;
 // nt x = 7;
 // int y = 8;
 // string result = $"{x} + {y} = {x + y}";
@@ -549,17 +549,17 @@
 // sumNumber(arr);
 // Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
-// double[] newArray(int length, int number1, int number2)
+// int[] newArray(int length, int number1, int number2)
 // {
-//     double[] array = new double[length];
+//     int[] array = new int[length];
 //     for (int i = 0; i < length; i++)
 //     {
-//         array[i] = Math.Round(new Random().Next(number1,number2) + new Random().NextDouble(), 2);
+//         array[i] = Math.Round(new Random().Next(number1,number2) + new Random().Nextint(), 2);
 //         // Console.Write($"{array[i]} ");
 //     }
 //     return array;
 // }
-// void ShowArray(double[] array)
+// void ShowArray(int[] array)
 // {
 //     for (int i = 0; i < array.Length; i++)
 //     {
@@ -567,25 +567,25 @@
 //     }
 //     Console.WriteLine();
 // }
-// double minNumber(double[] array)
+// int minNumber(int[] array)
 // {
-//     double min = array[0];
+//     int min = array[0];
 //     for (int i = 0; i < array.Length; i++)
 //     {
 //         if(array[i]<min) min = array[i];
 //     }
 //     return min;
 // }
-// double maxNumber(double[] array)
+// int maxNumber(int[] array)
 // {
-//     double max = array[0];
+//     int max = array[0];
 //     for (int i = 0; i < array.Length; i++)
 //     {
 //         if(array[i]>max) max = array[i];
 //     }
 //     return max;
 // }
-// void result(double min, double max)
+// void result(int min, int max)
 // {
 //     Console.Write(Math.Round(min - max, 2));
 // }
@@ -594,11 +594,11 @@
 // Console.Write("Введите второе число: ");
 // int number2 = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine();
-// double[] arr =  newArray(4, number1, number2);
+// int[] arr =  newArray(4, number1, number2);
 // Console.Write($"В диапазоне чисел от {number1} до {number2} получаем массив: " );
 // ShowArray(arr);
-// double min = minNumber(arr);
-// double max = maxNumber(arr);
+// int min = minNumber(arr);
+// int max = maxNumber(arr);
 // Console.Write($"Разница между максимальным {max} и минимальным {min} значениями = ");
 // result(max, min);
 
@@ -640,22 +640,134 @@
 // Напишите программу, которая найдёт точку пересечения двух прямых, 
 // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
-// void number_x(double k1, double b1, double k2, double b2){
+// void number_x(int k1, int b1, int k2, int b2){
 //         if(k1==k2&&b1==b2) Console.WriteLine("Прямые совпадают!");
 //         else if (k1==k2) Console.WriteLine("Прямые не пересекаются!");
 //         else{
-//                 double x = (b2-b1)/(k1-k2);
-//                 double y1 = k1*x + b1;
-//                 double y2 = k2*x+b2;
+//                 int x = (b2-b1)/(k1-k2);
+//                 int y1 = k1*x + b1;
+//                 int y2 = k2*x+b2;
 //                 Console.WriteLine($"y1 => {y1}, y2 => {y2}");
 //         }
 // }
 // Console.Write("Введите значение b1: ");
-// double b1 = Convert.ToInt32(Console.ReadLine());
+// int b1 = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите значение k1: ");
-// double k1 = Convert.ToInt32(Console.ReadLine());
+// int k1 = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите значение b2: ");
-// double b2 = Convert.ToInt32(Console.ReadLine());
+// int b2 = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите значение k2: ");
-// double k2 = Convert.ToInt32(Console.ReadLine());
+// int k2 = Convert.ToInt32(Console.ReadLine());
 // number_x(k1, b1, k2, b2);
+
+//SEMINAR7
+// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+// m = 3, n = 4.
+// 0,5 7 -2 -0,2
+// 1 -3,3 8 -9,9
+// 8 7,8 -7,1 9   
+// double[,] two_dimensional_array(int m, int n)
+// {
+//     double[,] array = new double[m, n];
+//     for (int i = 0; i < m; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             array[i, j] = Math.Round((new Random().Next(-100, 101) +
+//             new Random().NextDouble()), 2);
+//         }
+//     }
+//     return array;
+// }
+// void arrayPrint(double[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write($"{array[i, j]} |");
+//         }
+//         Console.WriteLine();
+//         Console.WriteLine();
+//     }
+// }
+// Console.Write("Введите количество строк: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество столбцов: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// double[,] array = two_dimensional_array(m, n);
+// arrayPrint(array);
+//---------
+// Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
+// и возвращает значение этого элемента или же указание, что такого элемента нет.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// 17 -> такого числа в массиве нет
+// void number_array(int[,] array, int n, int m){
+//         if(n<3&&m<4) Console.WriteLine(array[n, m]);
+//         else Console.WriteLine($"[{n}, {m}] => такого числа в массиве нет");
+// }
+// int[,] array = {
+//         {1, 4, 7, 2},
+//         {5, 9, 2, 3},
+//         {8, 4, 2, 4}
+// };
+// Console.Write("Введите номер строки в массиве: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите номер столбца в массиве: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// number_array(array, n, m);
+// Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+// int[,] two_dimensional_array(int m, int n)
+// {
+//     int[,] array = new int[m, n];
+//     for (int i = 0; i < m; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             array[i, j] = new Random().Next(1, 10);
+//         }
+//     }
+//     return array;
+// }
+// void arrayPrint(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write($"{array[i, j]} |");
+//         }
+//         Console.WriteLine();
+//         Console.WriteLine();
+//     }
+// }
+// void arithmetic_mean(int[,] array, int m, int n)
+// {
+//     double summ = 0;
+// //     int j = 0;
+//     for (int j = 0; j < n; j++)
+//     {
+//         summ = 0;
+//         for (int i = 0; i < m; i++)
+//         {
+            
+//             summ = summ + array[i, j]; 
+//         }
+//         Console.WriteLine($"Среднее арифметическое {j+1} столбца => {Math.Round(summ/m, 1)} ");
+//     }
+// }
+// Console.Write("Введите количество строк: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество столбцов: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[,] array = two_dimensional_array(m, n);
+// arrayPrint(array);
+// arithmetic_mean(array, m, n);
