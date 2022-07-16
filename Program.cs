@@ -601,3 +601,61 @@
 // double max = maxNumber(arr);
 // Console.Write($"Разница между максимальным {max} и минимальным {min} значениями = ");
 // result(max, min);
+
+//SEMINAR6
+// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+// 0, 7, 8, -2, -2 -> 2
+// 1, -7, 567, 89, 223-> 3
+// int[] numbersInput(int M){
+//         int[] newArray = new int[M];
+//         for (int i = 0; i < M; i++)
+//         {
+//              Console.WriteLine($"Введите число {i+1}: ");   
+//              newArray[i] = Convert.ToInt32(Console.ReadLine());  
+//         }
+//         return newArray;
+// }
+// void arrayPrint(int[] array){
+//         for (int i = 0; i < array.Length; i++)
+//         {
+//                 Console.Write($"{array[i]} ");
+//         }
+//         Console.WriteLine();
+// }
+// int numberCount(int[] array){
+//         int count = 0;
+//         for (int i = 0; i < array.Length; i++)
+//         {
+//                 if(array[i]==0) count++;                       
+//         }
+//         return count;
+// }
+// Console.WriteLine("Введите количество чисел: ");
+// int M = Convert.ToInt32(Console.ReadLine());
+// int[] array = numbersInput(M);
+// arrayPrint(array);
+// int count = numberCount(array);
+// Console.WriteLine($"Среди введенных пользователем чисел количество '0' => {count}");
+//----------
+// Напишите программу, которая найдёт точку пересечения двух прямых, 
+// заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+// b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+// void number_x(double k1, double b1, double k2, double b2){
+//         if(k1==k2&&b1==b2) Console.WriteLine("Прямые совпадают!");
+//         else if (k1==k2) Console.WriteLine("Прямые не пересекаются!");
+//         else{
+//                 double x = (b2-b1)/(k1-k2);
+//                 double y1 = k1*x + b1;
+//                 double y2 = k2*x+b2;
+//                 Console.WriteLine($"y1 => {y1}, y2 => {y2}");
+//         }
+// }
+// Console.Write("Введите значение b1: ");
+// double b1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите значение k1: ");
+// double k1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите значение b2: ");
+// double b2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите значение k2: ");
+// double k2 = Convert.ToInt32(Console.ReadLine());
+// number_x(k1, b1, k2, b2);
