@@ -771,3 +771,154 @@
 // int[,] array = two_dimensional_array(m, n);
 // arrayPrint(array);
 // arithmetic_mean(array, m, n);
+//------------
+// Формируется и выводится прямоугольный массив (n строк и m столбцов)
+// целых случайных чисел от -50 до 50. Вычисляется и выводится: а) среднее
+// арифметическое отрицательных чисел в каждой строке; в) сумма и среднее
+// арифметическое положительных четных чисел в каждой строке; д) сумма и
+// среднее арифметическое всех чисел.
+// int[,] array2(int n, int m){
+//         int[,] array2 = new int[n, m];
+//         for (int i = 0; i < array2.GetLength(0); i++)
+//         {
+//                 for (int j = 0; j < array2.GetLength(1); j++)
+//                 {
+//                         array2[i, j] = new Random().Next(-50, 51);
+//                 }
+//         }
+//         return array2;
+// }
+// void printArray(int[,] array){
+//         for (int i = 0; i < array.GetLength(0); i++)
+//         {
+//                 for (int j = 0; j < array.GetLength(1); j++)
+//                 {
+//                         Console.Write($"{array[i, j]}| ");
+//                 }
+//                 Console.WriteLine();
+//         }
+// }
+// double average(int[,] array, int n, int m){
+//         Console.Write("1)");
+//         double averages = 0;
+//         int count = 0;
+//         for (int i = 0; i < n; i++)
+//         {
+//                 averages = 0;
+//                 count = 0;
+//                 for (int j = 0; j < m; j++)
+//                 {
+                        
+//                         if(array[i, j]<0){ 
+//                         averages = averages + array[i, j];
+//                         count++;
+//                         }
+//                         else if(array[i, j]==0) count=1;
+//                 }
+//                 if(count==0) count++;
+//                 Console.WriteLine($"Среднее арифметическое отрицательных чисел в строке {i+1} => {Math.Round(averages/count, 1)}");
+               
+//         }
+//         return averages;
+// }
+// double average2(int[,] array, int n, int m){
+//         Console.Write("2)");
+//         double averages = 0;
+//         int count = 0;
+//         for (int i = 0; i < n; i++)
+//         {
+//                 averages = 0;
+//                 count = 0;
+//                 for (int j = 0; j < m; j++)
+//                 {
+                        
+//                         if(array[i, j]>0){ 
+//                         averages = averages + array[i, j];
+//                         count++;
+//                         }
+                     
+//                 }
+//                 if(count==0) count++;
+//                 Console.WriteLine($"Сумма положительных чисел в строке {i+1} => {averages}");
+//                 Console.WriteLine($"Среднее арифметическое положительных чисел в строке {i+1} => {Math.Round(averages/count, 1)}");
+//         }
+//         return averages;
+// }
+// double average3(int[,] array, int n, int m){
+//         Console.Write("3)");
+//         double averages = 0;
+//         int count = 0;
+//         for (int i = 0; i < n; i++)
+//         {
+//                 averages = 0;
+//                 count = 0;
+//                 for (int j = 0; j < m; j++)
+//                 {
+                        
+//                         averages = averages + array[i, j];
+//                         count++;
+                        
+//                 }
+              
+//                 Console.WriteLine($"Сумма всех чисел в строке {i+1} => {averages}");
+//                 Console.WriteLine($"Среднее арифметическое всех чисел в строке {i+1} => {Math.Round(averages/count, 1)}");
+//         }
+//         return averages; 
+// }
+// Console.Write("Введите количество строк: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество столбцов: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// int[,] array2new = array2(n, m);
+// printArray(array2new);
+// average(array2new, n, m);
+// average2(array2new, n, m);
+// average3(array2new, n, m);
+//----------
+// Формируется и выводится прямоугольный массив - таблица умножения двух
+// чисел от 1 до 10.
+// int[,] newArray(){
+//         int[,] array = new int[10, 10];
+//         for (int i = 1; i < 2; i++)
+//         {
+//                 for (int j = 1; j < 10; j++)
+//                 {
+//                         array[i, j] = j;
+//                 }
+                
+//         }
+//         for (int j = 1; j < 2; j++)
+//         {
+//                 for (int i = 1; i < 10; i++)
+//                 {
+//                         array[i, j] = i;
+//                 }
+                
+//         }
+//         return array;
+// }
+// void printArray(int[,] array){
+//         for (int i = 1; i < array.GetLength(0); i++)
+//         {
+//                 for (int j = 1; j < array.GetLength(1); j++)
+//                 {
+//                         if(array[i, j]<10) Console.Write($"{array[i, j]}  |");
+//                         else Console.Write($"{array[i, j]} |");
+                        
+//                 }
+//                 Console.WriteLine();
+//         }
+// }
+// int[,] multiplication_table(int[,] array){
+//         for (int i = 2; i < array.GetLength(0); i++)
+//         {
+//                 for (int j = 2; j < array.GetLength(1); j++)
+//                 {
+//                         array[i, j] = i*j;
+//                 }
+//         }
+//         return array;
+// }
+// int[,] arrayMy = newArray();
+// multiplication_table(arrayMy);
+// printArray(arrayMy);
